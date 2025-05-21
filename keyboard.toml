@@ -1,10 +1,10 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
+name = "Eking"
+product_name = "myrmk"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "haobo"
+manufacturer = "Eking"
 chip = "rp2040"
 
 [matrix]
