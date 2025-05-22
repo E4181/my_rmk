@@ -14,8 +14,12 @@ output_pins = ["P0_09", "P0_10", "P1_06", "P1_04"]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
 # row2col = true
 
+[layout]
+rows = 5
+cols = 4
+layers = 3
 # ┌───┬───┬───┬───┐
-# │NUM│ / │ * │ - │ <-- row 0, col 0..4
+# │NUM│ / │ * │ - │ 
 # ├───┼───┼───┼───┤
 # │ 7 │ 8 │ 9 │   │
 # ├───┼───┼───┤ + │
@@ -25,10 +29,6 @@ output_pins = ["P0_09", "P0_10", "P1_06", "P1_04"]
 # ├───┴───┼───┤ N │
 # │   0   │ . │ T │
 # └───────┴───┴───┘
-[layout]
-rows = 5
-cols = 4
-layers = 2
 matrix_map = """
 (0,0) (0,1) (0,2) (0,3)
 (1,0) (1,1) (1,2) (1,3)
