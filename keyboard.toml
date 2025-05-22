@@ -5,7 +5,7 @@ product_name = "mypad"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "Eking"
-chip = "rp2040"
+chip = "nrf52840"
 
 [matrix]
 # Input and output pins are mandatory
@@ -28,7 +28,7 @@ output_pins = ["P0_09", "P0_10", "P1_06", "P1_04"]
 [layout]
 rows = 5
 cols = 4
-layers = 3
+layers = 2
 matrix_map = """
 (0,0) (0,1) (0,2) (0,3)
 (1,0) (1,1) (1,2) (1,3)
