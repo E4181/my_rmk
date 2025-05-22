@@ -51,11 +51,11 @@ Kp0             MO(2)
 [[layer]]
 name = "2" #optional name for the layer
 keys = """
-__  __  __  __
-__  __  __  RgbTog
-__  __  __
-__  __  __  RgbModeForward
-__      __
+NumLock KpSlash KpAsterisk KpMinus
+Kp7     Kp8     Kp9        KpPlus
+Kp4     Kp5     Kp6
+Kp1     Kp2     Kp3        Enter
+Kp0             KpDot
 """
 
 
