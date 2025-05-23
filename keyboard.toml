@@ -1,9 +1,9 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "Eking"
+name = "mypad"
 product_name = "mypad"
-vendor_id = 0x4c4b
-product_id = 0x4643
+vendor_id = 0x616C
+product_id = 0x0001
 manufacturer = "Eking"
 chip = "nrf52840"
 
