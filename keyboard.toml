@@ -22,16 +22,16 @@ keymap = [
     [
        ["NumLock", "KpSlash", "KpAsterisk", "KpMinus"],
        ["Kp7",     "Kp8",     "Kp9",        "KpPlus"],
-       ["Kp4",     "Kp5",     "Kp6"],
+       ["Kp4",     "Kp5",     "Kp6", "_"],
        ["Kp1",     "Kp2",     "Kp3",        "Enter"],
-       ["Kp0",                "MO(2)"]
+       ["Kp0",      "_" ,     "MO(2)" , "_"]
     ],
 [
-       ["NumLock", "KpSlash", "KpAsterisk", "KpMinus"],
-       ["Kp7",     "Kp8",     "Kp9",        "KpPlus"],
-       ["Kp4",     "Kp5",     "Kp6"],
-       ["Kp1",     "Kp2",     "Kp3",        "Enter"],
-       ["Kp0",                "KpDot"]
+       ["_", "_", "_", "_"],
+       ["_", "_", "_", "_"],
+       ["_", "_", "_", "_"],
+       ["_", "_", "_", "_"],
+       ["_", "_", "_", "_"]
     ],
 ]
 
