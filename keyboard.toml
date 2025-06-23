@@ -17,24 +17,52 @@ output_pins = ["P0_09", "P0_10", "P1_06", "P1_04"]
 [layout]
 rows = 5
 cols = 4
-layers = 2
-keymap = [
-    [
-       ["NumLock", "KpSlash", "KpAsterisk", "KpMinus"],
-       ["Kp7",     "Kp8",     "Kp9",        "KpPlus"],
-       ["Kp4",     "Kp5",     "Kp6", "_"],
-       ["Kp1",     "Kp2",     "Kp3",        "Enter"],
-       ["Kp0",      "_" ,     "MO(2)" , "_"]
-    ],
-[
-       ["_", "_", "_", "_"],
-       ["_", "_", "_", "_"],
-       ["_", "_", "_", "_"],
-       ["_", "_", "_", "_"],
-       ["_", "_", "_", "_"]
-    ],
-]
+layers = 3
+# ┌───┬───┬───┬───┐
+# │NUM│ / │ * │ - │
+# ├───┼───┼───┼───┤
+# │ 7 │ 8 │ 9 │   │
+# ├───┼───┼───┤ + │
+# │ 4 │ 5 │ 6 │   │
+# ├───┼───┼───┼───┤
+# │ 1 │ 2 │ 3 │ E │
+# ├───┴───┼───┤ N │
+# │   0   │ . │ T │
+# └───────┴───┴───┘
+matrix_map = """
+(0,0) (0,1) (0,2) (0,3)
+(1,0) (1,1) (1,2) (1,3)
+(2,0) (2,1) (2,2)
+(3,0) (3,1) (3,2) (3,3)
+(4,0)       (4,1) 
+"""
 
+[aliases]
+my_cut = "WM(X, LCtrl)"
+my_copy = "WM(C, LCtrl)"
+my_paste = "WM(V, LCtrl)"
+
+# layer 0 (default):
+[[layer]]
+name = "base_layer" #optional name for the layer
+keys = """
+NumLock KpSlash KpAsterisk KpMinus
+Kp7     Kp8     Kp9        KpPlus
+Kp4     Kp5     Kp6
+Kp1     Kp2     Kp3        Enter
+Kp0             KpDot
+"""
+
+# layer 1: 
+[[layer]]
+name = "mouse_navigation" #optional name for the layer
+keys = """
+TO(base_layer)   @MyCut     @MyCopy          @MyPaste
+MouseBtn1        MouseUp    MouseBtn2        MouseWheelUp
+MouseLeft        MouseBtn4  MouseRight
+MouseWheelLeft   MouseDown  MouseWheelRight  MouseWheelDown
+MouseBtn1                   MouseBtn12
+"""
 
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
